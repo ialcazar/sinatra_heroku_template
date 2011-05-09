@@ -1,16 +1,15 @@
 =Sinatra and Heroku project template
-
 This is a project template for a Sinatra app. It's just an scaffolding that wires up everything you need to start developing your app.
 
 == Sinatra flavour
-This app uses the modular style of Sinatra.
+The template uses the modular style of Sinatra.
 
-If you want to switch to classic style you just have to change the <code>config.ru</code> file and the base class of the app <code>lib/base/app.rb</code>. Checkout https://github.com/sinatra/sinatra under <i>Modular vs. Classic Style</i>.
+If you want to switch to classic style you just have to change the <code>config.ru</code> file and the base class of the app <code>lib/app/base.rb</code>. Checkout https://github.com/sinatra/sinatra under <i>Modular vs. Classic Style</i>.
 
 == Heroku
-The project template is also Heroku-ready. You can just add your Heroku git repository and get everithing working.
+The project template is also Heroku-ready. You can just add your Heroku git repository and get everything working.
 
-If you want to use this template but you are not deploying to Heroku remove the gem for your Gemfile and you're done.
+If you want to use this template but you are not deploying to Heroku remove the gem from your <code>Gemfile</code>, update your bundle and you're good.
 
 == Testing
 I have included RSpec becouse it is my tool of choice for TDD. You can edit the Gemfile and use whatever tool you want. (I've also included the RSpec 2 configuration for autotest.)
@@ -22,4 +21,4 @@ The Rakefile defines a task to launch the application easier by just running:
  rake run
 You can also specify the port you want to run the app on:
  rake run port=8080
-It runs on port 4567 default.
+It runs on port 4567 by default.
