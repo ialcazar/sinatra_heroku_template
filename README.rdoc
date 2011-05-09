@@ -1,11 +1,11 @@
 =Sinatra and Heroku project template
 
-This is a project template for a Sinatra app. It's just an scaffolding that wires everything you need to start developing your app.
+This is a project template for a Sinatra app. It's just an scaffolding that wires up everything you need to start developing your app.
 
 == Sinatra flavour
 This app uses the modular style of Sinatra.
 
-If you want to switch to classic stile you just have to change the config.ru file and the base class of the app.
+If you want to switch to classic style you just have to change the <code>config.ru</code> file and the base class of the app <code>lib/base/app.rb</code>. Checkout https://github.com/sinatra/sinatra under <i>Modular vs. Classic Style</i>.
 
 == Heroku
 The project template is also Heroku-ready. You can just add your Heroku git repository and get everithing working.
@@ -13,9 +13,7 @@ The project template is also Heroku-ready. You can just add your Heroku git repo
 If you want to use this template but you are not deploying to Heroku remove the gem for your Gemfile and you're done.
 
 == Testing
-I have included an spec directory because RSpec is my tool of choice for TDD. You can edit the Gemfile and use whatever tool you want.
-
-I've also included the RSpec 2 configuration for autotest.
+I have included RSpec becouse it is my tool of choice for TDD. You can edit the Gemfile and use whatever tool you want. (I've also included the RSpec 2 configuration for autotest.)
 
 The project template doesn't install any tool for acceptance/integration testing.
 
